@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: right;
+    margin-top: 20px;
+}
+/* #brasdroit{ */
+/*  */
+    /* animation: brasdroit 1s  infinite linear; */
+    /* transform-origin: center; */
+    /* transform-box: fill-box; */
+/*  */
+/* } */
+/*  */
+/* @keyframes brasdroit{ */
+    /* from{ */
+      /* transform: rotateZ(10deg); */
+    /* } */
+    /* to{ */
+       /* transform: rotateY(0deg); */
+    /* } */
+/* } */
+/*  */
+ #cercle2, #cercle1, #cercle3{
+
+     animation: cercle2 1s  ease infinite; 
+     transform-origin: center; 
+     transform-box: fill-box; 
+
+ } 
+  
+ @keyframes cercle2{ 
+     from{ 
+      transform: rotateZ(0deg); 
+     } 
+     to{ 
+        transform: rotateZ(360deg); 
+     } 
+} 
+
+#carre1, #bout1, #bout2
+ { 
+
+     animation: carre 5s  infinite ; 
+     transform-origin: left; 
+     transform-box: fill-box;
+
+ } 
+  
+ @keyframes carre{ 
+     from{ 
+       transform: translateX(95px);
+     } 
+     to{ 
+        transform: translateZ(10px); 
+     } 
+ } 
+
+ /* #tableau{ */
+
+     /* animation: tableau 6s  infinite ;  */
+     /* transform-origin: center;  */
+     /* transform-box: fill-box; */
+
+ /* }  */
+ /*  */
+ /* @keyframes tableau{  */
+     /* from{  */
+       /* transform: translateX(45px);  */
+     /* }  */
+     /* to{  */
+        /* transform: rotateY(0deg); */
+     /* }  */
+ /* }  */
+
+ #bras1, #bras2{
+
+    animation: bras1 1s  infinite linear ; 
+    transform-origin: left-top; 
+    transform-box: fill-box;
+
+} 
+
+@keyframes bras1{ 
+    from{ 
+      transform: rotateY(0deg); 
+    } 
+    to{ 
+       transform: rotateZ(10deg);
+       
+    } 
+} 
+
+#carre3{
+    animation: carre3 3s infinite linear;
+    transform-origin: left;
+    transform: translate(50px);
+
+}
+@keyframes carre3{
+    from{
+        transform: translateY(20px);
+    }
+    to{
+        transform: translateX(20px);
+    }
+}
+
+#carre2{
+    animation: carre2 1s infinite linear;
+    transform-origin: left;
+    transform: translate(50px);
+
+}
+@keyframes carre2{
+    from{
+        transform: translateX(20px);
+    }
+    to{
+        transform: translateZ(20px);
+    }
+}
+#point1{
+    animation: point1 4s infinite linear;
+    transform-origin: left;
+    transform: translate(50px);
+
+}
+@keyframes point1{
+    from{
+        transform: translateZ(10px);
+    }
+    to{
+        transform: translateY(250px);
+    }
+}
+#point3{
+    animation: point3 3s infinite linear;
+    transform-origin: right;
+    transform: translate(50px);
+
+}
+@keyframes point3{
+    from{
+        transform: translateZ(10px);
+    }
+    to{
+        transform: translateX(250px);
+    }
+}
+#point2, #tableau{
+    animation: point2 2s infinite linear;
+    transform-origin: center;
+    transform: translate(50px);
+
+}
+@keyframes point2{
+    0%, 19% { transform: translateZ(0); }
+    20%, 39% { transform: translateZ(-20%); }
+    40%, 59% { transform: translateZ(-40%); }
+
+
+}
