@@ -23,27 +23,20 @@
              
              <img class="sm:w-1/2 w-3/4 h-3/4 mb-6" src="./imgPro/profil.svg" >
 
-             <!-- w-2/2 xs:w-1/3 mx-auto my-6 mt-0 hover-translate-2 cursor-pointer animate" -->
     
       </div> 
-      <!--Fin-->
-       
-              <!-- Fleche back up -->
-              <!-- <div class="arrow"> -->
-              <!-- <a href="#"> -->
-             <!-- <i class="fa fa-sort-up fa-2x fixed mt-44 bg-gray-800 text-gray-300 p-2 pb-1 rounded-lg"></i> -->
-             <!-- </a> -->
-             <!-- </div> -->
              </main>
       </div>
   </div>
+  
   <!-- Telos to proto block -->
-  <div class="container-wave bg-gray-800  w-full"><!-- arxi tin deftero block-->
-  <svg class=" " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" fill="none">
-                 <rect xmlns="http://www.w3.org/2000/svg" class="w-full h-full bg-gray-300" fill="D1D5DB "/> 
-                <path d="M833.079 29.3927C416.978 -36.7409 0 29.3927 0 29.3927V60H1440V29.3927V0.151872C1440 0.151872 1249.18 95.5263 833.079 29.3927Z" fill="#1F2937"/>
-            </svg>
-  </div>
+  
+  <!-- <div class="container-wave bg-gray-800"> -->
+     <!-- <svg class="bg-gray-300 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" fill="none"> -->
+         <!-- <rect xmlns="http://www.w3.org/2000/svg" class="w-full h-full bg-gray-800" fill="D1D5DB "/> -->
+         <!-- <path d="M833.079 29.3927C416.978 -36.7409 0 29.3927 0 29.3927V60H1440V29.3927V0.151872C1440 0.151872 1249.18 95.5263 833.079 29.3927Z" fill="#1F2937"/> -->
+  <!--  -->
+     <!-- </svg> -->
 <!-- Premiere section -->
 <!-- component -->
 <section id="apropos" >
@@ -95,6 +88,7 @@
 						</div>
 					</div>
 				</div>
+				
 </section>  
 
 <section id="formation" >
