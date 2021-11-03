@@ -3,9 +3,9 @@
  <div class="bg-gray-300 flex flex-col font-sans"><!-- Proto block yia alous -->
       <div class="container mx-auto px-8 "> 
           <main class="flex flex-col-reverse sm:flex-row jusitfy-between items-center py-12 ">
-              <div class="sm:w-2/5 flex flex-col items-center sm:items-start text-center sm:text-left">
-              <div data-aos="fade-down"data-aos-duration="1000">
-                  <p class="font-mono text-2xl">Salut, je suis</p>
+               <div class="sm:w-2/5 flex flex-col items-center sm:items-start text-center sm:text-left">
+                   <div data-aos="fade-down"data-aos-duration="1000">
+                      <p class="font-mono text-2xl">Salut, je suis</p>
                   
               </div>  
                   <div class="typed"> 
@@ -21,7 +21,7 @@
               </div>
              <!--SVG-->
              
-             <img class="sm:w-1/2 w-3/4 h-3/4 mb-6" src="./imgPro/profil.svg" >
+             <img class="sm:w-1/2 w-1/3 h-3/4 mb-6" src="./imgPro/profil.svg" >
 
     
       </div> 
@@ -139,4 +139,5 @@
 						</div>
 					</div>
 				</div>
-</section>                 
+</section> 
+</div>                
