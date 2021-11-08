@@ -1,0 +1,83 @@
+<svg width="451" height="487" viewBox="0 0 451 487" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+body{
+    background-color: brown;
+    margin-top: 30px;
+    padding: 0;
+    text-align: center;
+}
+
+#tete {
+    animation:logo 3s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes logo {
+    0% {
+        transform: matrix(0);
+    }
+    50% {
+        transform: matrix(0.87,-0.5,0,0.87,0,1);
+    }
+    100% {
+        transform: matrix(0);
+    }
+}
+
+#rouge, #jaune {
+    animation: rouge 3s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes rouge {
+    0% {
+        transform: scale(0,0);
+    }
+    50% {
+        transform: scale(1,1);
+    }
+    100% {
+        transform: scale(0,0);
+    }
+}
+ 
+#pied-d-2, #cote-d-2, #tiret2, #pied-2, #sein-d-2, #sein-g-2, #vec4, #cote-g-2 {
+    animation: badass 1s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes badass {
+    0% {
+        transform: translate(0px);
+    }
+    50% {
+        transform: translate(2px);
+    }
+    100% {
+        transform: translate(0px);
+    }
+}
+
+
+</style>
+<path id="tete" d="M349.5 54C349.5 83.1973 328.94 106.5 304 106.5C279.06 106.5 258.5 83.1973 258.5 54C258.5 24.8027 279.06 1.5 304 1.5C328.94 1.5 349.5 24.8027 349.5 54Z" fill="#27AE60" stroke="white" stroke-width="3"/>
+<path id="vec1" d="M2 418C4.87528 430.249 5.18114 432.297 9.11111 445.333C9.29957 445.958 20.4457 481.28 21.3333 482.111C33.9347 493.903 53.3695 466.824 64.6667 453.778C97.4552 415.912 164.838 324.994 192 291" stroke="white" stroke-width="3" stroke-linecap="round"/>
+<path id="pied-d-1" d="M2.99995 419C-5.34058e-05 415 10.7215 431.197 16.8888 430.722C20.4536 430.448 23.7293 426.265 27.4444 425.444C30.6558 424.735 34.0283 425.128 37.2777 424.722C51.2966 422.97 55.9643 408.435 60.6666 397C78.1011 354.605 92.0586 310.708 107.111 267.444C133.881 190.503 164.827 115.643 195 40" stroke="white" stroke-width="3" stroke-linecap="round"/>
+<path id="sein-d-1" d="M193 290.343C195.184 326.05 204.628 362.935 214 397.2C216.54 406.487 229.874 452.09 249.444 436.945C264.636 425.188 269.521 402.304 274.444 384.822C288.889 333.53 305.5 201.5 305 228" stroke="white" stroke-width="3" stroke-linecap="round"/>
+<path id="sein-g-1" d="M305 224C309.849 246.202 314.841 268.362 320.667 290.333C328.313 319.171 335.39 350.603 348.944 377.389C351.666 382.768 364.643 403.494 374 398.556C375.909 397.548 376.694 395.017 377.222 393.111C381.252 378.575 382.079 362.668 384.389 347.833C390.271 310.05 396.295 272.227 404.611 234.889C416.213 182.797 432.052 132.483 449 82" stroke="white" stroke-width="3" stroke-linecap="round"/>
+<path id="vec5" d="M196 40C211.548 73.368 224.489 107.885 239.889 141.333C251.052 165.58 263.277 187.086 278 209" stroke="white" stroke-width="3" stroke-linecap="round"/>
+<path id="vec2" d="M278 209C291.619 192.904 306.898 178.229 321.889 163.444C360.247 125.616 398.676 87.8594 437 50" stroke="white" stroke-width="3" stroke-linecap="round"/>
+<path id="vec3" d="M437 50C440.753 60.2909 444.399 70.6148 448.328 80.806" stroke="white" stroke-width="3" stroke-linecap="round"/>
+<path id="vec4" d="M13 424.116C14.9522 433.964 15.1598 435.611 17.8281 446.093C17.956 446.596 25.5236 474.997 26.1263 475.665C34.682 485.146 47.8772 463.374 55.5474 452.883C77.8091 422.437 123.558 349.333 142 322" stroke="white" stroke-width="3" stroke-linecap="round"/>
+<path id="pied-d-2" d="M13 425.332C15.6959 429.127 20.1988 436.413 25.9485 435.982C29.2719 435.733 32.3258 431.932 35.7894 431.187C38.7833 430.543 41.9275 430.9 44.9569 430.531C58.0266 428.938 62.3782 415.733 66.7622 405.344C83.0161 366.827 96.0286 326.946 110.062 287.639C135.019 217.736 163.87 149.723 192 81" stroke="white" stroke-width="3" stroke-linecap="round"/>
+<path id="sein-d-2" d="M212 301.757C213.462 328.538 219.787 356.201 226.063 381.9C227.764 388.865 236.692 423.067 249.798 411.708C259.97 402.891 263.242 385.728 266.539 372.616C276.211 334.148 281.226 294.399 287 255" stroke="white" stroke-width="3" stroke-linecap="round"/>
+<path id="sein-g-2" d="M326 242.74C328.929 257.084 331.945 271.401 335.465 285.595C340.085 304.226 344.361 324.532 352.55 341.838C354.194 345.313 362.034 358.703 367.688 355.513C368.841 354.862 369.315 353.227 369.634 351.995C372.069 342.604 372.569 332.327 373.964 322.743C377.518 298.333 381.158 273.898 386.182 249.775C393.191 216.121 402.761 183.615 413 151" stroke="white" stroke-width="3" stroke-linecap="round"/>
+<path id="cote-d-2" d="M192 81C207.548 112.394 220.489 144.868 235.889 176.337C247.052 199.149 259.277 219.383 274 240" stroke="white" stroke-width="3" stroke-linecap="round"/>
+<path id="cote-g-2" d="M274 240C285.26 225.825 297.721 213.02 309.968 200.105C341.303 167.057 372.689 134.078 404 101" stroke="white" stroke-width="3" stroke-linecap="round"/>
+<path id="tiret2" d="M404.926 100.447C408.824 108.585 412.691 116.77 416.629 124.792" stroke="white" stroke-width="3" stroke-linecap="round"/>
+<path id="rouge" d="M269.613 356.617C251.125 431.588 240.422 438.556 220.387 352.903L219 343C240.129 356.613 251.416 355.972 271 346.714L269.613 356.617Z" fill="#F31313" stroke="white" stroke-width="2"/>
+<path id="jaune" d="M376.045 301.015C372.034 377.48 359.067 371.386 338.964 300.216L338.198 296.19C354.713 306.381 363.614 304.33 377.831 295.851L376.045 301.015Z" fill="#F2C94C" stroke="white" stroke-width="2"/>
+</svg>

@@ -13,8 +13,14 @@ body{
 }
 
 @keyframes costume-two {
-    to {
+    0% {
+    transform: translate(0px);
+  } 
+     50% {
     transform: translate(-20px, -35px);
+  } 
+     100% {
+    transform: translate(0px);
   } 
 }
 
@@ -25,9 +31,15 @@ body{
 }
 
 @keyframes t-shirt-tree {
-    to {
-    transform: translate(42px);
+    0% {
+    transform: translate(0px);
   } 
+    50% {
+    transform: translate(20px);
+  }
+    100% {
+    transform: translate(0px);
+  }  
 }
 
 #face-portefeuille, #lautre-face, #fermeture, #bouton, #barre-portefeuille, #cheveu-one, #visage-one, #cou, 
@@ -36,8 +48,14 @@ body{
 }
 
 @keyframes face-portefeuille {
-    to {
+    0% {
+        transform: translate(0px);
+    }
+    50% {
         transform: translate(-30px);
+    }
+    100% {
+        transform: translate(0px);
     }
 }
 

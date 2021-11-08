@@ -30,11 +30,14 @@ body{
 }
 
 @keyframes tiret{
-    from {
-        transform:  translate(0%);
+    0% {
+        transform:  translate(0px);
     }
-    to {
-        transform: translate(125%);
+    50% {
+        transform:  translate(160px);
+    }
+    100% {
+        transform:  translate(0px);
     }
 }
 
@@ -48,6 +51,9 @@ body{
 @keyframes tiret2{
     from {
         transform:  translate(0%);
+    }
+    50% {
+        transform:translate(50%) 
     }
     to {
         transform: translateY(125%);
@@ -65,8 +71,11 @@ body{
     from {
         transform:  translate(0%);
     }
-    to {
+    50% {
         transform: translateY(20px);
+    }
+    to {
+        transform: translate(0px);
     }
 }
 
@@ -110,13 +119,19 @@ body{
 }
 
 #point1 {
-    animation: point1 5s 4.5s ease-in-out;
+    animation: point1 5s 4.5s ease-in-out infinite;
 
 }
 
 @keyframes point1 {
-    to {
+    0% {
+        transform: translate(0%);
+    }
+    50% {
         transform: translateX(73%);
+    }
+    100% {
+        transform: translateX(0%);
     }
 }
 
@@ -126,8 +141,14 @@ body{
 }
 
 @keyframes point2 {
-    to {
-        transform: translateX(73%);
+     0% {
+        transform: translate(0%);
+    }
+    50% {
+        transform: translateX(70%);
+    }
+    100% {
+        transform: translateX(0%);
     }
 }
 
@@ -137,21 +158,35 @@ body{
 }
 
 @keyframes point3 {
-    to {
-        transform: translateX(73%);
+     0% {
+        transform: translate(0%);
+    }
+    50% {
+        transform: translateX(68%);
+    }
+    100% {
+        transform: translateX(0%);
     }
 }
 
 #pantalon, #tableau {
-    animation: pantalon 2s 18s infinite linear;
+    animation: bigbam 2s 18s infinite linear;
+    transform-origin:center;
+    transform-box:fill-box;
 }
 
-@keyframes pantalon {
-    to {
-        transform: translate(2px);
+@keyframes bigbam {
+    0% {
+        transform: translate(0px);
+    }
+     50% {
+        transform: translate(5px);
+    }
+     100% {
+        transform: translate(0px);
     }
 }
-#tableau {
+<!-- #tableau {
     animation: tableau 2s 20s infinite linear;
 }
 
@@ -159,7 +194,7 @@ body{
     to {
         transform: translate(20px);
     }
-}
+} -->
 
 #tiret4 {
     animation: tiret4 4s 22s infinite linear;
@@ -169,11 +204,14 @@ body{
 }
 
 @keyframes tiret4{
-    from {
+    0% {
         transform:  translate(0%);
     }
-    to {
+    50% {
         transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(0%);
     }
 }
 
@@ -185,11 +223,14 @@ body{
 }
 
 @keyframes tiret5{
-    from {
+    0% {
         transform:  translate(0%);
     }
-    to {
+    50% {
         transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(0%);
     }
 }
 #tiret6 {
@@ -200,11 +241,14 @@ body{
 }
 
 @keyframes tiret6{
-    from {
+    0% {
         transform:  translate(0%);
     }
-    to {
+    50% {
         transform: translateY(2px);
+    }
+    100% {
+        transform:translate(0%)
     }
 }
 
@@ -248,25 +292,39 @@ body{
 
 #feuille1 {
     animation: feuille1 4s 30s infinite linear;
-    transform-origin: center;
+    transform-origin: bottom;
     transform-box: fill-box;
 }
 
 @keyframes feuille1 {
-    to{
-    transform: rotate(10deg);
-    }
+    0%{
+          transform: rotate(0deg);
+      }
+
+    50%{
+          transform: rotate(10deg);
+       }
+
+    100%{
+         transform: rotate(0deg);
+        }
 }
 
 #feuille2 {
     animation: feuille2 4s 30s infinite linear;
-    transform-origin: center;
+    transform-origin: bottom;
     transform-box: fill-box;
 }
 
 @keyframes feuille2 {
-    to{
-    transform: rotate(-10deg);
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(0deg);
     }
 }
 
@@ -274,8 +332,14 @@ body{
     animation: point4 2s 34s infinite linear;
 }
 @keyframes point4 {
-    to {
+    0% {
+        transform: translate(0px);
+    }
+    50% {
         transform: translate(-100px, -100px);
+    }
+    100% {
+        transform: translate(0px);
     }
 }
 
@@ -283,16 +347,28 @@ body{
     animation: point5 4s 36s infinite linear;
 }
 @keyframes point5 {
-    to {
+    0% {
+        transform: translate(0px);
+    }
+     50% {
         transform: translate(130px, -280px);
+    }
+     100% {
+        transform: translate(0px);
     }
 }
 #point6 {
     animation: point6 4s 38s infinite linear;
 }
 @keyframes point6 {
-    to {
-        transform: translate(-280px);
+    0% {
+        transform: translate(0px);
+    }
+    50% {
+        transform: translate(-230px);
+    }
+    1000% {
+        transform: translate(0px);
     }
 }
 

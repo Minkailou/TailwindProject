@@ -104,19 +104,20 @@ body{
 
 
  #tiret1, #tiret2, #tiret3{ 
-     animation: tiret 2s infinite linear 
+     animation: bim 2s infinite linear 
  } 
- #tiret1:hover{ 
-     animation-play-state: paused; 
- } 
+ 
 
- @keyframes tiret { 
-     from { 
+ @keyframes bim { 
+     0% { 
          transform: rotateX(0deg); 
      } 
-     to { 
+     50% { 
          transform: rotateY(30deg); 
-     } 
+     }
+     100% { 
+         transform: rotateX(0deg); 
+     }  
  } 
 
 #coin2{ 
@@ -130,10 +131,13 @@ body{
 
  @keyframes coin2 { 
      from { 
-         transform: translateX(-0%); 
+         transform: translate(0%); 
+     }
+     50% {
+         transform: translate(30%)
      } 
      to { 
-         transform: translateY(100%) ; 
+         transform: translate(0%) ; 
      } 
  } 
 

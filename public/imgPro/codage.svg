@@ -34,7 +34,7 @@ body{
     }
 }
 
-#tiret1, #tiret2, #tiret3 {
+#tiret1, #tiret2, #tiret3{
     animation: bamm 2s infinite linear;
     transform-box:fill-box;
     transform-origin:center
@@ -47,9 +47,10 @@ body{
         transform: translate(100px);
     }
     100% {
-        transform:translate(0px+);
+        transform:translate(0px);
     }   
 }
+
 
 #titer4, #pti-carre3, #pti-carre6,  #pti-carre7 {
     animation: titer4 350ms infinite linear;
@@ -66,7 +67,7 @@ body{
 }
 
  #pti-carre8 {
-    animation: pti-carre8 2s infinite linear;
+    animation: pti-carre8 4s infinite linear;
     transform-origin: center;
     transform-box: fill-box;
 }
@@ -74,12 +75,16 @@ body{
     from{
         transform: translateY(0px);
     }
+    50% {
+        transform: translate(100px)
+    }
     to {
-        transform: translateX(100px);
+        transform: translateX(0px);
     }
 }
+
 #pti-carre5 {
-    animation: pti-carre5 2s infinite linear;
+    animation: pti-carre5 4s infinite linear;
     transform-origin: center;
     transform-box: fill-box;
 }
@@ -87,12 +92,31 @@ body{
     from{
         transform: translateY(0px);
     }
+    50% {
+        transform: translate(-100px)
+    }
     to {
-        transform: translateX(-100px);
+        transform: translateX(0px);
+    }
+}
+#pti-carre4 {
+    animation: pti-carre4 4s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+@keyframes pti-carre4 {
+    from{
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translate(-0px, -100px)
+    }
+    to {
+        transform: translateX(0px);
     }
 }
 
-#pti-carre4 {
+<!-- #pti-carre4 {
     animation: pti-carre4 2s infinite linear;
     transform-origin: center;
     transform-box: fill-box;
@@ -104,15 +128,56 @@ body{
     to {
         transform: translate(-0px, -100px);
     }
-}
+} -->
 
-#manche-g, #bras-g, #manche-g2, #jambe-g, #pied-g, #chaussure-g {
-    animation: manche-g 2s infinite linear;
+#manche-g, #bras-g, #manche-g2, #jambe-g, #pied-g, #chaussure-g
+, #bras-d, #jambe-d, #pied-d, #chaussure-d, #t-shirt, #tete, #cheveux, #oreille {
+    animation:  2s infinite linear;
+    transform-origin:center;
+    transform-box:fill-box;
 }
 
 @keyframes manche-g {
-    to {
-        transform: translate(1px);
+    0% {
+        transform: translate(0px);
+    }
+    50% {
+        transform: translate(100px);
+    }
+    100% {
+        transform: translate(0px);
+    }
+}
+ #bras-d {
+    animation:plante 1s infinite linear;
+    transform-origin:bottom;
+    transform-box:fill-box;
+}
+@keyframes plante {
+    0% {
+        transform:rotateZ(5deg);
+    }
+    50% {
+        transform:rotateZ(-15deg);
+    }
+    100% {
+        transform:rotateZ(10deg);
+    }
+}
+#bras-g {
+    animation:planta 2s infinite linear;
+    transform-origin:bottom;
+    transform-box:fill-box;
+}
+@keyframes planta {
+    0% {
+        transform:rotateZ(5deg);
+    }
+    50% {
+        transform:rotateZ(-7deg);
+    }
+    100% {
+        transform:rotateZ(10deg);
     }
 }
 
@@ -134,19 +199,7 @@ body{
     }
 }
 
-#bras-d {
-    animation: bras-d 10s infinite linear;
-    transform-origin: center;
-    transform-box: fill-box;
-}
-@keyframes bras-d {
-    from{
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(-50deg);
-    }
-}
+
 </style>
 <g id="codage" clip-path="url(#clip0_0:1)">
 <path id="bras-d" d="M131.696 223.151C131.702 221.923 131.544 220.707 131.234 219.578C130.924 218.449 130.468 217.432 129.894 216.589C129.32 215.747 128.641 215.098 127.898 214.683C127.156 214.268 126.367 214.095 125.579 214.176C124.792 214.257 124.024 214.59 123.324 215.153C122.623 215.717 122.004 216.499 121.506 217.452C121.008 218.404 120.642 219.506 120.43 220.688C120.218 221.871 120.165 223.109 120.274 224.325L103.787 257.929C103.083 260.119 102.811 262.584 103.003 265.014C103.195 267.444 103.843 269.732 104.867 271.591L106.161 273.939L112.095 272.092L118.821 262.855L118.029 252.388L126.337 232.068L126.327 232.053C127.781 231.909 129.145 230.908 130.143 229.255C131.14 227.601 131.695 225.419 131.696 223.151V223.151Z" fill="#534141"/>

@@ -6,42 +6,31 @@ body{
     text-align: ;
 }
 
-#MINKA {
-    animation: MINKA 3s infinite;
+#MINKA, #cercle, #cote-g-portrait, #cote-d-portrait {
+    animation: nom 3s infinite linear;
+    transform-origin:center;
+    transform-box:fill-box;
     
   
 }
-#MINKA:hover{
-    animation-play-state: paused;
-}
 
-@keyframes MINKA{
-    to {
-        transform: rotate(1turn);
-    }
-}
+@keyframes nom {
+    0% {
+        transform: scale(0,0);
+       }
+    50% {
+        transform: scale(1,1);
+        }
+    100% {
+        transform: scale(0,0);
+       }
+}     
 
 
-#cercle, #cote-g-portrait, #cote-d-portrait {
-    animation: cercle 3s infinite linear;
-    transform-origin: center;
-    transform-box: fill-box;
-}
-
-@keyframes cercle{
-    from {
-        max-height: 0;
-        opacity: 0;
-        transform: scale(0);
-    }
-    to {
-        max-height: 100px;
-        
-    }
-}
+ 
 
 #tableau, #ligne1, #ligne2{
-    animation: tableau 3s infinite linear;
+    animation: tableau 5s infinite linear;
 }
 #tableau:hover{
     animation-play-state: paused;
@@ -56,70 +45,74 @@ body{
     /* 100% { transform: translateX(-100%);  } */
 }
 
-#barre, #SACKO  {
-    animation: barre 2s infinite linear;
-}
-#barre:hover{
-    animation-play-state: paused;
-}
-
-@keyframes barre {
-    from {
-        transform: rotateX(0deg);
-    }
-    to {
-        transform: rotateY(30deg);
-    }
+#barre, #ligne4,  #ligne6  {
+    animation: baricade 2s infinite linear;
+    transform-origin:right;
+    transform-box:fill-box
 }
 
-#ligne3, #ligne5 {
-    animation: ligne 5s infinite linear
-}
-#ligne3:hover{
-    animation-play-state: paused;
-}
-
-@keyframes ligne {
-    from {
-        transform: rotateX(0deg);
+@keyframes baricade {
+    0% {
+        transform: translate(0px);
     }
-    to {
-        transform: rotateY(30deg);
+    50% {
+        transform: translate(200px);
+    }
+    100% {
+        transform: translate(0px)
     }
 }
-
-#ligne4, #ligne6 {
-    animation: ligne 2s infinite linear
-}
-#ligne4:hover{
-    animation-play-state: paused;
+ #ligne3,  #ligne5  {
+    animation: barica 3s infinite linear;
+    transform-origin:center;
+    transform-box:fill-box
 }
 
-@keyframes ligne {
-    from {
-        transform: rotateX(0deg);
+@keyframes barica {
+    0% {
+        transform: translate(0px);
     }
-    to {
-        transform: rotateY(20deg);
+    50% {
+        transform: translate(100px);
+    }
+    100% {
+        transform: translate(0px)
     }
 }
 
-#bras-d, #main-d, #bras-g, #main-g, #pied-gauche, #pied-droit, #chaussure-g, #chaussure-d, #pantalon-mr 
-, #costume-g, #costume-d, #tete-mr, #cheveu-mr, #t-shirt-mr{
-    animation: bras 1s infinite linear;
-    transform-origin: center;
-    transform-box: fill-box;
-}
-#bras-d:hover{
-    animation-play-state: paused;
-}
 
-@keyframes bras {
-    from {
-        transform: translateX(-0%);
+
+
+#main-g {
+    animation:plante 2s infinite linear;
+    transform-origin:top;
+    transform-box:fill-box;
+}
+@keyframes plante {
+    0% {
+        transform:rotateZ(5deg);
     }
-    to {
-        transform: translateX(10%) ;
+    50% {
+        transform:rotateZ(-5deg);
+    }
+    100% {
+        transform:rotateZ(5deg);
+    }
+}
+ #tete-mr, #cheveu-mr {
+    animation:plante 2s infinite linear;
+    transform-origin:bottom;
+    transform-box:fill-box;
+}
+@keyframes plante {
+    0% {
+        transform:rotateZ(5deg);
+    }
+    50% {
+        transform:rotateZ(-5deg);
+    }
+    100% {
+        transform:rotateZ(5deg);
     }
 }
 

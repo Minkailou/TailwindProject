@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./imgPro/Designpro.jpg" >
+    <link rel="icon" href="./imgPro/logowinbo-noir1.png" >
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
     <link rel="stylesheet" href="output.css" />
-    <link rel="stylesheet" href="style.css" />
+  
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -19,7 +20,7 @@
       
       <a href="#" class="font-extrabold m-3 uppercase inline-flex hover:text-pink-700 transition-all duration-500 text-white">
         
-        <img class="h-6 w-6 mr-2"src="./imgPro/Designpro.jpg">
+        <img class="h-12 w-12 mr-2 "src="./imgPro/wb1.png">
         
   
           
@@ -44,10 +45,10 @@
                                             -translate-y-full md:translate-y-0
                                             md:mt-1 md:items-center md:mx-1 md:uppercase">
           <a href="index.php" class="mx-0 sm:mx-2 my-2 border-b-2 border-transparent hover:border-pink-600 hover:text-pink-700 transition-all duration-500 py-1 sm:p-0 text-white">Accueil</a>
-          <a href="#apropos" class="mx-0 sm:mx-2 my-2 border-b-2 border-transparent hover:border-pink-600 hover:text-pink-700 transition-all duration-500 py-1 sm:p-0 text-white">A propos</a>
-          <a href="#portfolio" class="mx-0 sm:mx-2 my-2 border-b-2 border-transparent hover:border-pink-600 hover:text-pink-700 transition-all duration-500 py-1 sm:p-0 text-white">Portfolio</a>
-          <a href="#formation" class="mx-0 sm:mx-2 my-2 border-b-2 border-transparent hover:border-pink-600 hover:text-pink-700 transition-all duration-500 py-1 sm:p-0 text-white">Formation</a>
-          <a href="#experience" class="mx-0 sm:mx-2 my-2 border-b-2 border-transparent hover:border-pink-600 hover:text-pink-700 transition-all duration-500 py-1 sm:p-0 text-white">Experience</a>
+          <a href="apropos.php" class="mx-0 sm:mx-2 my-2 border-b-2 border-transparent hover:border-pink-600 hover:text-pink-700 transition-all duration-500 py-1 sm:p-0 text-white">A propos</a>
+          <a href="portfolio.php" class="mx-0 sm:mx-2 my-2 border-b-2 border-transparent hover:border-pink-600 hover:text-pink-700 transition-all duration-500 py-1 sm:p-0 text-white">Portfolio</a>
+          <a href="formation.php" class="mx-0 sm:mx-2 my-2 border-b-2 border-transparent hover:border-pink-600 hover:text-pink-700 transition-all duration-500 py-1 sm:p-0 text-white">Formation</a>
+          <a href="experience.php" class="mx-0 sm:mx-2 my-2 border-b-2 border-transparent hover:border-pink-600 hover:text-pink-700 transition-all duration-500 py-1 sm:p-0 text-white">Experience</a>
           <a href="contact.php" class="mx-0 sm:mx-2 my-2 border-b-2 border-transparent hover:border-pink-600 hover:text-pink-700 transition-all duration-500 py-1 sm:p-0 text-white">Contact</a>
       </div>
     
