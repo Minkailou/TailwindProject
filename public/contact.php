@@ -6,10 +6,12 @@
     if(!empty($_POST['nom'])&&  !empty($_POST['mail']) 
     && !empty($_POST['phone']) && !empty($_POST['msg'])){
 
-   $nom = htmlspecialchars($_POST['nom']);
-   $mail = htmlspecialchars($_POST['mail']);
-   $phone = htmlspecialchars($_POST['phone']);
-   $msg = htmlspecialchars($_POST['msg']);
+
+   $id_client="\N";   
+   $nom = $idcom->quote($_POST['nom']);
+   $mail = $idcom->quote($_POST['mail']);
+   $phone = $idcom->quote($_POST['phone']);
+   $msg = $idcom->quote($_POST['msg']);
 
 
 
@@ -29,8 +31,22 @@
 
        
 
-        $requete = $idcom-> prepare("INSERT INTO portable (nom, mail, phone, msg) VALUES (?, ?, ?, ?)");
-        $requete->execute(array($nom, $mail, $phone, $msg));
+        $requete = "INSERT INTO portable 
+        VALUES($id_client, $nom, $mail, $phone, $msg)";
+        $nblignes = $idcom->exec($requete);
+
+        if($nblignes!=1){
+           $mess_erreur=$idcom->errorInfo();
+           echo "Insertion impossible, code", $idcom->errorCode(), $mess_erreur[2];
+           echo "<script type=\"text/javascript\">
+           alert('Erreur : ".$idcom->errorCode()."')</script>"; 
+        }
+        else {
+           echo "<script type=\"text/javascript\">
+           alert('Vous êtes enregistré. Votre numéroro de msg est :
+           ". $idcom->lastInsertId()."')</script>";
+           $idcom = null;
+        }
         
         //   header("location: remerciement.php");
 

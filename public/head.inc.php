@@ -18,9 +18,9 @@
 <!-- I've set max-w-screen-md, you may need to change it -->
 <nav class="bg-gray-800 shadow fixed max-w-screen-full z-10 mx-auto inset-x-0 top-0 flex justify-between items-center">
       
-      <a href="#" class="font-extrabold m-3 uppercase inline-flex hover:text-pink-700 transition-all duration-500 text-white">
+      <a href="index.php" class="font-extrabold m-3 uppercase inline-flex hover:text-pink-700 transition-all duration-500 text-white">
         
-        <img class="h-12 w-12 mr-2 "src="./imgPro/wb1.png">
+        <img class="h-12 w-12 mr-2 "src="./imgPro/logofinal.svg">
         
   
           
